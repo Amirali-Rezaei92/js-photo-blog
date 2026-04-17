@@ -29,5 +29,5 @@ fetch(API_URL)
         console.error(error);
     })
     .finally(() => {
-
+        card.innerHTML='';
     });
