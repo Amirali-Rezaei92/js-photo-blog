@@ -12,6 +12,7 @@ fetch(API_URL)
             const card = document.createElement('div');
             card.className='card';
             card.innerHTML = `
+                <img class="pin" src="styles/img/pin.svg" alt="pin">
                 <div class="photo">
                     <img src= "${pic.url}" alt ="${pic.title}">
                 </div>

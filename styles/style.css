@@ -24,10 +24,15 @@ main {
     
 }
 .card{
-    padding: 10px;
+    padding: 15px;
     background-color: white;
-    overflow: hidden;
-    
+    position: relative;
+    border-radius: 0px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);  
+}
+.card:hover{
+    transform:translateY(-5px)  rotate(1deg);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 .photo img{
     width: 100%;
@@ -43,6 +48,14 @@ main {
 .date{
     font-family: "Sometype Mono", monospace;
 
+}
+
+.pin{
+    width: 40px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* per tutti scermi*/
