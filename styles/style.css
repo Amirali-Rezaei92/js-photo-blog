@@ -78,12 +78,28 @@ main {
 
 
 .card-full-view{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
     
 }
 .card-full-view-content{
+    background-color: rgb(197, 197, 197);
+    padding: 20px;
+    border-radius: 20px;
 
 }
 .card-full-view img{ 
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
 
 }
 .hidden{

@@ -29,7 +29,7 @@ fetch(API_URL)
                 cardFullViewImage.src = pic.url;
                 cardFullViewCaption.textContent = pic.title;
                 cardFullViewDate.textContent = pic.date;
-                cardFullView.classList.remove('hidden');
+                cardFullView.classList.remove("hidden");
             })    
             gallery.appendChild(card);
         }
@@ -40,8 +40,8 @@ fetch(API_URL)
     .catch(error => {
         console.error(error);
     })
-    .finally(() => {
-        card.innerHTML='';
-    });
+    
 
-
+cardFullView.addEventListener('click', () => {
+    cardFullView.classList.add('hidden');
+});
