@@ -1,6 +1,11 @@
 const API_URL = 'https://lanciweb.github.io/demo/api/pictures/'
 
 const gallery = document.querySelector('.gallery');
+const cardFullView = document.querySelector('#card-full-view');
+const cardFullViewImage = document.querySelector('#card-full-view-img');
+const cardFullViewCaption = document.querySelector('#card-full-view-caption');
+const cardFullViewDate = document.querySelector('#card-full-view-date');
+
 
 
 fetch(API_URL)
@@ -19,6 +24,13 @@ fetch(API_URL)
                 <p class="caption"> ${pic.title} </p>
                 <p class="date"> ${pic.date}  </p>
                 `;
+            card.addEventListener('click' ,()=>{
+
+                cardFullViewImage.src = pic.url;
+                cardFullViewCaption.textContent = pic.title;
+                cardFullViewDate.textContent = pic.date;
+                cardFullView.classList.remove('hidden');
+            })    
             gallery.appendChild(card);
         }
 
@@ -31,3 +43,5 @@ fetch(API_URL)
     .finally(() => {
         card.innerHTML='';
     });
+
+

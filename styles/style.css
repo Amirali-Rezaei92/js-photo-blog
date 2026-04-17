@@ -29,9 +29,10 @@ main {
     position: relative;
     border-radius: 0px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);  
+    margin-top: 20px;
 }
 .card:hover{
-    transform:translateY(-5px)  rotate(1deg);
+    transform:translateX(-7px)  rotate(1deg);
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 .photo img{
@@ -73,4 +74,18 @@ main {
     .card {
         width: calc(33.33% - 20px);
     }
+}
+
+
+.card-full-view{
+    
+}
+.card-full-view-content{
+
+}
+.card-full-view img{ 
+
+}
+.hidden{
+    display: none;
 }
