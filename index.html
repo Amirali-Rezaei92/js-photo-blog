@@ -16,13 +16,24 @@
 
 <body>
     <header>
-        <div class="cintainer text-center p-4">
+        <div class="container text-center p-4">
             <h1>ESTATE '24</h1>
         </div>
 
     </header>
     <main>
         <div class="container p-5">
+            <template id="card-template">
+                <div class="card">
+                    <img class="pin" src="styles/img/pin.svg" alt="pin">
+                    <div class="photo">
+                        <img src="" alt="">
+                    </div>
+                    <p class="caption"></p>
+                    <p class="date"></p>
+                </div>
+            </template>
+
             <div class="gallery">
 
             </div>
@@ -30,7 +41,8 @@
 
     </main>
     <div class=" card-full-view hidden" id="card-full-view">
-        <div class=" card-full-view-content" >
+        <div class=" card-full-view-content">
+            <button class="btn btn-close close-btn-location btn-danger" id="close-btn"></button>
             <img src="" id="card-full-view-img" alt="">
             <p id="card-full-view-caption" class="caption"></p>
             <p id="card-full-view-date" class="date"></p>
@@ -38,7 +50,7 @@
     </div>
 
 
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/index2.js"></script>
 </body>
 
 </html>
