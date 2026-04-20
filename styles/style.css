@@ -107,7 +107,7 @@ header h1{
     border-radius: 20px;
     margin-bottom: 10px;
     border: 1px solid brown;
-
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.5);
 }
 .hidden{
     display: none;
@@ -117,5 +117,5 @@ header h1{
     top: 15px;
     left: 15px;
     border-radius: 50%;
-    border: 1px solid brown;
+    border: 2px solid rgb(202, 44, 44);
 }
